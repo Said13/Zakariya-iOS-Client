@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10C344E08B6CE35A2BFCCE90 /* Pods_Wathakkir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904238F086A9516CB5BEECED /* Pods_Wathakkir.framework */; };
+		9800732F1F8E5B670018E6CF /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9800732E1F8E5B670018E6CF /* SideMenuViewController.swift */; };
+		9811A0171F6AB38F00D59CDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811A0161F6AB38F00D59CDA /* AppDelegate.swift */; };
+		9811A0191F6AB38F00D59CDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811A0181F6AB38F00D59CDA /* ViewController.swift */; };
+		9811A01C1F6AB38F00D59CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9811A01A1F6AB38F00D59CDA /* Main.storyboard */; };
+		9811A0211F6AB38F00D59CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9811A01F1F6AB38F00D59CDA /* LaunchScreen.storyboard */; };
+		984127B91F8F913E00198B6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984127B81F8F913E00198B6C /* SettingsViewController.swift */; };
+		984202DC1F817101008A9211 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984202DB1F8169F7008A9211 /* Images.xcassets */; };
+		984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D6E321F7EC3E200888958 /* FrontViewController.swift */; };
+		985868191F8BED3100A85C13 /* SettingsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */; };
+		98932D541F6FBB7B007F507F /* OLDSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98932D531F6FBB7B007F507F /* OLDSettingsViewController.swift */; };
+		98D19CF41F7D43A200D31DB5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B6B0B040205346C32BD5F27 /* Pods-Wathakkir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wathakkir.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir.debug.xcconfig"; sourceTree = "<group>"; };
+		904238F086A9516CB5BEECED /* Pods_Wathakkir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wathakkir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9800732E1F8E5B670018E6CF /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		9811A0131F6AB38F00D59CDA /* Wathakkir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wathakkir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9811A0161F6AB38F00D59CDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9811A0181F6AB38F00D59CDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9811A01B1F6AB38F00D59CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9811A0201F6AB38F00D59CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9811A0221F6AB38F00D59CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984127B81F8F913E00198B6C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		984202DB1F8169F7008A9211 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = /Users/abdullahatkaev/SwiftProjects/test/test/Images.xcassets; sourceTree = "<absolute>"; };
+		984D6E321F7EC3E200888958 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
+		985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPopUpViewController.swift; sourceTree = "<group>"; };
+		98932D531F6FBB7B007F507F /* OLDSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLDSettingsViewController.swift; sourceTree = "<group>"; };
+		98D19CF11F7D43A100D31DB5 /* Wathakkir-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wathakkir-Bridging-Header.h"; sourceTree = "<group>"; };
+		98D19CF21F7D43A200D31DB5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B9B8AA1B02D9E6697CF8660D /* Pods-Wathakkir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wathakkir.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9811A0101F6AB38F00D59CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C344E08B6CE35A2BFCCE90 /* Pods_Wathakkir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34CFD017DEBCA8157A0A3F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				904238F086A9516CB5BEECED /* Pods_Wathakkir.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F0372026A41F79A5B27A7C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B6B0B040205346C32BD5F27 /* Pods-Wathakkir.debug.xcconfig */,
+				B9B8AA1B02D9E6697CF8660D /* Pods-Wathakkir.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9811A00A1F6AB38F00D59CDA = {
+			isa = PBXGroup;
+			children = (
+				9811A0151F6AB38F00D59CDA /* Wathakkir */,
+				9811A0141F6AB38F00D59CDA /* Products */,
+				4F0372026A41F79A5B27A7C3 /* Pods */,
+				34CFD017DEBCA8157A0A3F2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9811A0141F6AB38F00D59CDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9811A0131F6AB38F00D59CDA /* Wathakkir.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9811A0151F6AB38F00D59CDA /* Wathakkir */ = {
+			isa = PBXGroup;
+			children = (
+				98D19CF21F7D43A200D31DB5 /* SWRevealViewController.h */,
+				98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */,
+				9811A0161F6AB38F00D59CDA /* AppDelegate.swift */,
+				9811A0181F6AB38F00D59CDA /* ViewController.swift */,
+				9811A01A1F6AB38F00D59CDA /* Main.storyboard */,
+				984202DB1F8169F7008A9211 /* Images.xcassets */,
+				984D6E321F7EC3E200888958 /* FrontViewController.swift */,
+				9811A01F1F6AB38F00D59CDA /* LaunchScreen.storyboard */,
+				9811A0221F6AB38F00D59CDA /* Info.plist */,
+				98932D531F6FBB7B007F507F /* OLDSettingsViewController.swift */,
+				9800732E1F8E5B670018E6CF /* SideMenuViewController.swift */,
+				98D19CF11F7D43A100D31DB5 /* Wathakkir-Bridging-Header.h */,
+				985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */,
+				984127B81F8F913E00198B6C /* SettingsViewController.swift */,
+			);
+			name = Wathakkir;
+			path = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9811A0121F6AB38F00D59CDA /* Wathakkir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9811A0251F6AB38F00D59CDA /* Build configuration list for PBXNativeTarget "Wathakkir" */;
+			buildPhases = (
+				BB1B5C314AE63C70E137024B /* [CP] Check Pods Manifest.lock */,
+				9811A00F1F6AB38F00D59CDA /* Sources */,
+				9811A0101F6AB38F00D59CDA /* Frameworks */,
+				9811A0111F6AB38F00D59CDA /* Resources */,
+				26C691067E8E0DAF025AECBF /* [CP] Embed Pods Frameworks */,
+				37904D3E07C8BE80E13C5175 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wathakkir;
+			productName = test;
+			productReference = 9811A0131F6AB38F00D59CDA /* Wathakkir.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9811A00B1F6AB38F00D59CDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Abdullah;
+				TargetAttributes = {
+					9811A0121F6AB38F00D59CDA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6RYGR6EVKS;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9811A00E1F6AB38F00D59CDA /* Build configuration list for PBXProject "Wathakkir" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9811A00A1F6AB38F00D59CDA;
+			productRefGroup = 9811A0141F6AB38F00D59CDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9811A0121F6AB38F00D59CDA /* Wathakkir */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9811A0111F6AB38F00D59CDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984202DC1F817101008A9211 /* Images.xcassets in Resources */,
+				9811A0211F6AB38F00D59CDA /* LaunchScreen.storyboard in Resources */,
+				9811A01C1F6AB38F00D59CDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26C691067E8E0DAF025AECBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37904D3E07C8BE80E13C5175 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB1B5C314AE63C70E137024B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9811A00F1F6AB38F00D59CDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */,
+				9811A0191F6AB38F00D59CDA /* ViewController.swift in Sources */,
+				98D19CF41F7D43A200D31DB5 /* SWRevealViewController.m in Sources */,
+				9811A0171F6AB38F00D59CDA /* AppDelegate.swift in Sources */,
+				9800732F1F8E5B670018E6CF /* SideMenuViewController.swift in Sources */,
+				985868191F8BED3100A85C13 /* SettingsPopUpViewController.swift in Sources */,
+				98932D541F6FBB7B007F507F /* OLDSettingsViewController.swift in Sources */,
+				984127B91F8F913E00198B6C /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9811A01A1F6AB38F00D59CDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9811A01B1F6AB38F00D59CDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9811A01F1F6AB38F00D59CDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9811A0201F6AB38F00D59CDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9811A0231F6AB38F00D59CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9811A0241F6AB38F00D59CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9811A0261F6AB38F00D59CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6B0B040205346C32BD5F27 /* Pods-Wathakkir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6RYGR6EVKS;
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Obarg.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test/Wathakkir-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9811A0271F6AB38F00D59CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B8AA1B02D9E6697CF8660D /* Pods-Wathakkir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6RYGR6EVKS;
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Obarg.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test/Wathakkir-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9811A00E1F6AB38F00D59CDA /* Build configuration list for PBXProject "Wathakkir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9811A0231F6AB38F00D59CDA /* Debug */,
+				9811A0241F6AB38F00D59CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9811A0251F6AB38F00D59CDA /* Build configuration list for PBXNativeTarget "Wathakkir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9811A0261F6AB38F00D59CDA /* Debug */,
+				9811A0271F6AB38F00D59CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9811A00B1F6AB38F00D59CDA /* Project object */;
+}

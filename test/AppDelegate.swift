@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound , .badge]) {(accepted, error) in
+            if !accepted {
+                print("Notification access denied.")
+            }
+        }
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -40,6 +48,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+//    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+//        <#code#>
+//    }
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    
 
 
 }
