@@ -92,23 +92,47 @@
 		9811A0151F6AB38F00D59CDA /* Wathakkir */ = {
 			isa = PBXGroup;
 			children = (
+				9811A0161F6AB38F00D59CDA /* AppDelegate.swift */,
+				98E967871FC030D200385E88 /* Controller */,
+				984202DB1F8169F7008A9211 /* Images.xcassets */,
+				9811A0221F6AB38F00D59CDA /* Info.plist */,
+				9811A01F1F6AB38F00D59CDA /* LaunchScreen.storyboard */,
+				98E967851FC030B800385E88 /* Model */,
+				98E967861FC030C200385E88 /* View */,
+			);
+			name = Wathakkir;
+			path = test;
+			sourceTree = "<group>";
+		};
+		98E967851FC030B800385E88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		98E967861FC030C200385E88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9811A01A1F6AB38F00D59CDA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		98E967871FC030D200385E88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				98D19CF21F7D43A200D31DB5 /* SWRevealViewController.h */,
 				98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */,
-				9811A0161F6AB38F00D59CDA /* AppDelegate.swift */,
 				9811A0181F6AB38F00D59CDA /* ViewController.swift */,
-				9811A01A1F6AB38F00D59CDA /* Main.storyboard */,
-				984202DB1F8169F7008A9211 /* Images.xcassets */,
 				984D6E321F7EC3E200888958 /* FrontViewController.swift */,
-				9811A01F1F6AB38F00D59CDA /* LaunchScreen.storyboard */,
-				9811A0221F6AB38F00D59CDA /* Info.plist */,
 				98932D531F6FBB7B007F507F /* OLDSettingsViewController.swift */,
 				9800732E1F8E5B670018E6CF /* SideMenuViewController.swift */,
 				98D19CF11F7D43A100D31DB5 /* Wathakkir-Bridging-Header.h */,
 				985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */,
 				984127B81F8F913E00198B6C /* SettingsViewController.swift */,
 			);
-			name = Wathakkir;
-			path = test;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
