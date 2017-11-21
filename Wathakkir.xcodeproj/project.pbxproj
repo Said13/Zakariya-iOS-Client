@@ -19,6 +19,8 @@
 		984202DC1F817101008A9211 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984202DB1F8169F7008A9211 /* Images.xcassets */; };
 		984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D6E321F7EC3E200888958 /* FrontViewController.swift */; };
 		985868191F8BED3100A85C13 /* SettingsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */; };
+		9891BD6D1FC42BEF00383A68 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9891BD6C1FC42BEF00383A68 /* CoreData.framework */; };
+		9891BD911FC4305800383A68 /* Wathakkir.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9891BD8F1FC4305800383A68 /* Wathakkir.xcdatamodeld */; };
 		98932D541F6FBB7B007F507F /* OLDSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98932D531F6FBB7B007F507F /* OLDSettingsViewController.swift */; };
 		98D19CF41F7D43A200D31DB5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,8 @@
 		984202DB1F8169F7008A9211 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = /Users/abdullahatkaev/SwiftProjects/test/test/Images.xcassets; sourceTree = "<absolute>"; };
 		984D6E321F7EC3E200888958 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 		985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPopUpViewController.swift; sourceTree = "<group>"; };
+		9891BD6C1FC42BEF00383A68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9891BD901FC4305800383A68 /* Wathakkir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wathakkir.xcdatamodel; sourceTree = "<group>"; };
 		98932D531F6FBB7B007F507F /* OLDSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLDSettingsViewController.swift; sourceTree = "<group>"; };
 		98D19CF11F7D43A100D31DB5 /* Wathakkir-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wathakkir-Bridging-Header.h"; sourceTree = "<group>"; };
 		98D19CF21F7D43A200D31DB5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9891BD6D1FC42BEF00383A68 /* CoreData.framework in Frameworks */,
 				10C344E08B6CE35A2BFCCE90 /* Pods_Wathakkir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +66,7 @@
 		34CFD017DEBCA8157A0A3F2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9891BD6C1FC42BEF00383A68 /* CoreData.framework */,
 				904238F086A9516CB5BEECED /* Pods_Wathakkir.framework */,
 			);
 			name = Frameworks;
@@ -97,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				9811A0161F6AB38F00D59CDA /* AppDelegate.swift */,
+				9891BD8F1FC4305800383A68 /* Wathakkir.xcdatamodeld */,
 				98932D531F6FBB7B007F507F /* OLDSettingsViewController.swift */,
 				98D19CF21F7D43A200D31DB5 /* SWRevealViewController.h */,
 				98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */,
@@ -283,6 +290,7 @@
 				98D19CF41F7D43A200D31DB5 /* SWRevealViewController.m in Sources */,
 				9811A0171F6AB38F00D59CDA /* AppDelegate.swift in Sources */,
 				9800732F1F8E5B670018E6CF /* SideMenuViewController.swift in Sources */,
+				9891BD911FC4305800383A68 /* Wathakkir.xcdatamodeld in Sources */,
 				985868191F8BED3100A85C13 /* SettingsPopUpViewController.swift in Sources */,
 				98932D541F6FBB7B007F507F /* OLDSettingsViewController.swift in Sources */,
 				98251A941FC1B2A400F632EA /* ServerManager.swift in Sources */,
@@ -461,6 +469,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9891BD8F1FC4305800383A68 /* Wathakkir.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9891BD901FC4305800383A68 /* Wathakkir.xcdatamodel */,
+			);
+			currentVersion = 9891BD901FC4305800383A68 /* Wathakkir.xcdatamodel */;
+			path = Wathakkir.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9811A00B1F6AB38F00D59CDA /* Project object */;
 }
