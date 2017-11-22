@@ -17,6 +17,8 @@
 		98251A961FC1B36900F632EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98251A951FC1B36900F632EA /* Post.swift */; };
 		984127B91F8F913E00198B6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984127B81F8F913E00198B6C /* SettingsViewController.swift */; };
 		984202DC1F817101008A9211 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984202DB1F8169F7008A9211 /* Images.xcassets */; };
+		98442CC61FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98442CC41FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift */; };
+		98442CC71FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98442CC51FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift */; };
 		984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D6E321F7EC3E200888958 /* FrontViewController.swift */; };
 		985868191F8BED3100A85C13 /* SettingsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */; };
 		9891BD6D1FC42BEF00383A68 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9891BD6C1FC42BEF00383A68 /* CoreData.framework */; };
@@ -39,6 +41,8 @@
 		98251A951FC1B36900F632EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		984127B81F8F913E00198B6C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		984202DB1F8169F7008A9211 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = /Users/abdullahatkaev/SwiftProjects/test/test/Images.xcassets; sourceTree = "<absolute>"; };
+		98442CC41FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PostCD+CoreDataClass.swift"; path = "/Users/abdullahatkaev/SwiftProjects/test/test/Model/PostCD+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		98442CC51FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PostCD+CoreDataProperties.swift"; path = "/Users/abdullahatkaev/SwiftProjects/test/test/Model/PostCD+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		984D6E321F7EC3E200888958 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 		985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPopUpViewController.swift; sourceTree = "<group>"; };
 		9891BD6C1FC42BEF00383A68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -122,6 +126,8 @@
 		98E967851FC030B800385E88 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				98442CC41FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift */,
+				98442CC51FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift */,
 				98251A931FC1B2A400F632EA /* ServerManager.swift */,
 				98251A951FC1B36900F632EA /* Post.swift */,
 			);
@@ -232,6 +238,8 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMPaperSwitch/RAMPaperSwitch.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -239,6 +247,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMPaperSwitch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -285,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98442CC71FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift in Sources */,
 				984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */,
 				9811A0191F6AB38F00D59CDA /* ViewController.swift in Sources */,
 				98D19CF41F7D43A200D31DB5 /* SWRevealViewController.m in Sources */,
@@ -295,6 +306,7 @@
 				98932D541F6FBB7B007F507F /* OLDSettingsViewController.swift in Sources */,
 				98251A941FC1B2A400F632EA /* ServerManager.swift in Sources */,
 				984127B91F8F913E00198B6C /* SettingsViewController.swift in Sources */,
+				98442CC61FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift in Sources */,
 				98251A961FC1B36900F632EA /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
