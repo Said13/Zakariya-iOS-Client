@@ -8,43 +8,79 @@
 
 import UIKit
 import UserNotifications
-
-
+import Realm
+import RealmSwift
 
 class FrontViewController: UIViewController {
-    @IBOutlet weak var post_title: UILabel!
-    @IBOutlet weak var post_body: UILabel!
+    @IBOutlet weak var bodyLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     
     @IBOutlet weak var menuButton: UIButton!
 
     var post: Post?
-    var posts = [PostCD]()
-    private var appDelegate = UIApplication.shared.delegate as! AppDelegate
-    private var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var posts = [RealmPost]()
+    
+//    let realm = try! Realm(configuration: Realm.Configuration(inMemoryIdentifier: "TemporaryRealm"))
+    let realm = try! Realm()
+
+//    var posts = [PostCD]()
+//    private var appDelegate = UIApplication.shared.delegate as! AppDelegate
+//    private var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenus()
-        saveNewPost()
+        getLastPost()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        do {
-            posts = try context.fetch(PostCD.fetchRequest())
-            let sort = NSSortDescriptor(keyPath: \PostCD.id, ascending: true)
-//            request.sort
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo) ")
+    func getTodayData() -> String{
+        let today = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        let result = formatter.string(from: today)
+        print(result)
+        return result
+    }
+    
+    func getLastPost(){
+        let posts = realm.objects(RealmPost.self)
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        let sorted = posts.sorted(byKeyPath: "id")
+        let last = sorted.last
+        let post = last
+        print(post)
+        let formatter = DateFormatter()
+        let postData: String
+        formatter.dateFormat = "dd.MM.yyyy"
+        if let sData = post?.date_added {
+            postData = formatter.string(from: sData)
+        } else { return }
+        if (post == nil) {
+            saveNewPost(id: 1)
+        } else if (postData == getTodayData()) {
+            viewLastPost()
+        } else {
+            if let sId = post?.id {
+                saveNewPost(id: (sId + 1))
+            } else { return }
         }
     }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        do {
+//            posts = try context.fetch(PostCD.fetchRequest())
+//            let sort = NSSortDescriptor(keyPath: \PostCD.id, ascending: true)
+////            request.sort
+//        } catch let error as NSError {
+//            print("Could not fetch. \(error), \(error.userInfo) ")
+//        }
+//    }
 
         
         
-    func saveNewPost(){
-        let id = 1
-        
+    func saveNewPost(id: Int){
         ServerManager.getPost(id: id) { (post, error) in
             if error != nil {
                 return
@@ -53,29 +89,44 @@ class FrontViewController: UIViewController {
                 return
             }
             self.post = myPost
-            let postCD = PostCD(entity: PostCD.entity(), insertInto: self.context)
+            let rPost = RealmPost()
             
-            
-            if let myID = self.post?.id {
-                postCD.id = Int16(myID)
-                self.post_title.text = postCD.title
+            if let myId = self.post?.id {
+                rPost.id = myId
             } else { return }
             
             if let myTitle = self.post?.title {
-                postCD.title = myTitle
-//                self.post_title.text = postCD.title
+                rPost.title = myTitle
             } else { return }
             
             if let myBody = self.post?.body {
-                postCD.body = myBody
-//                self.post_body.text = postCD.body
+                rPost.body = myBody
             } else { return }
-            self.appDelegate.saveContext()
+            
+            rPost.date_added = Date()
+            
+            try! self.realm.write {
+                self.realm.add(rPost)
+            }
+            self.viewLastPost()
         }
     }
+
     
-    func viewNewPost(){
-        
+    func viewLastPost(){
+        let posts = realm.objects(RealmPost.self)
+        let sorted = posts.sorted(byKeyPath: "id")
+        let last = sorted.last
+        let post = last
+        print("BOOM \(post?.description)")
+        if let myTitle = post?.title {
+            titleLabel.text = myTitle
+        } else { return }
+
+        if let myBody = post?.body {
+            bodyLabel.text = myBody
+        } else { return }
+
     }
         
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -95,6 +146,8 @@ class FrontViewController: UIViewController {
         }
     }
 }
+
+
 
 //        UNUserNotificationCenter.current().requestAuthorization(options: [ .alert, .sound, .badge], completionHandler: {didAllow, error in})
 //

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10C344E08B6CE35A2BFCCE90 /* Pods_Wathakkir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904238F086A9516CB5BEECED /* Pods_Wathakkir.framework */; };
+		2F024607F806045EE2F99F24 /* Pods_Wathakkir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0140A1B374C731089FBEE5 /* Pods_Wathakkir.framework */; };
 		9800732F1F8E5B670018E6CF /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9800732E1F8E5B670018E6CF /* SideMenuViewController.swift */; };
 		9811A0171F6AB38F00D59CDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811A0161F6AB38F00D59CDA /* AppDelegate.swift */; };
 		9811A0191F6AB38F00D59CDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811A0181F6AB38F00D59CDA /* ViewController.swift */; };
@@ -17,8 +17,7 @@
 		98251A961FC1B36900F632EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98251A951FC1B36900F632EA /* Post.swift */; };
 		984127B91F8F913E00198B6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984127B81F8F913E00198B6C /* SettingsViewController.swift */; };
 		984202DC1F817101008A9211 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984202DB1F8169F7008A9211 /* Images.xcassets */; };
-		98442CC61FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98442CC41FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift */; };
-		98442CC71FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98442CC51FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift */; };
+		98442CC91FC60CA5001BFC20 /* RealmPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98442CC81FC60CA5001BFC20 /* RealmPost.swift */; };
 		984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D6E321F7EC3E200888958 /* FrontViewController.swift */; };
 		985868191F8BED3100A85C13 /* SettingsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */; };
 		9891BD6D1FC42BEF00383A68 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9891BD6C1FC42BEF00383A68 /* CoreData.framework */; };
@@ -28,8 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B6B0B040205346C32BD5F27 /* Pods-Wathakkir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wathakkir.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir.debug.xcconfig"; sourceTree = "<group>"; };
-		904238F086A9516CB5BEECED /* Pods_Wathakkir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wathakkir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EEAC9F3E61775140AE52D2 /* Pods-Wathakkir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wathakkir.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir.debug.xcconfig"; sourceTree = "<group>"; };
 		9800732E1F8E5B670018E6CF /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		9811A0131F6AB38F00D59CDA /* Wathakkir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wathakkir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9811A0161F6AB38F00D59CDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,8 +39,7 @@
 		98251A951FC1B36900F632EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		984127B81F8F913E00198B6C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		984202DB1F8169F7008A9211 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = /Users/abdullahatkaev/SwiftProjects/test/test/Images.xcassets; sourceTree = "<absolute>"; };
-		98442CC41FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PostCD+CoreDataClass.swift"; path = "/Users/abdullahatkaev/SwiftProjects/test/test/Model/PostCD+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		98442CC51FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PostCD+CoreDataProperties.swift"; path = "/Users/abdullahatkaev/SwiftProjects/test/test/Model/PostCD+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		98442CC81FC60CA5001BFC20 /* RealmPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPost.swift; sourceTree = "<group>"; };
 		984D6E321F7EC3E200888958 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 		985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPopUpViewController.swift; sourceTree = "<group>"; };
 		9891BD6C1FC42BEF00383A68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -51,7 +48,8 @@
 		98D19CF11F7D43A100D31DB5 /* Wathakkir-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wathakkir-Bridging-Header.h"; sourceTree = "<group>"; };
 		98D19CF21F7D43A200D31DB5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		B9B8AA1B02D9E6697CF8660D /* Pods-Wathakkir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wathakkir.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir.release.xcconfig"; sourceTree = "<group>"; };
+		AA0140A1B374C731089FBEE5 /* Pods_Wathakkir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wathakkir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65676C3AE6B076673427FD8 /* Pods-Wathakkir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wathakkir.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,29 +58,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				9891BD6D1FC42BEF00383A68 /* CoreData.framework in Frameworks */,
-				10C344E08B6CE35A2BFCCE90 /* Pods_Wathakkir.framework in Frameworks */,
+				2F024607F806045EE2F99F24 /* Pods_Wathakkir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1546B948300CAD9BB64F1E68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84EEAC9F3E61775140AE52D2 /* Pods-Wathakkir.debug.xcconfig */,
+				D65676C3AE6B076673427FD8 /* Pods-Wathakkir.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		34CFD017DEBCA8157A0A3F2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				9891BD6C1FC42BEF00383A68 /* CoreData.framework */,
-				904238F086A9516CB5BEECED /* Pods_Wathakkir.framework */,
+				AA0140A1B374C731089FBEE5 /* Pods_Wathakkir.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4F0372026A41F79A5B27A7C3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7B6B0B040205346C32BD5F27 /* Pods-Wathakkir.debug.xcconfig */,
-				B9B8AA1B02D9E6697CF8660D /* Pods-Wathakkir.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		9811A00A1F6AB38F00D59CDA = {
@@ -90,8 +88,8 @@
 			children = (
 				9811A0151F6AB38F00D59CDA /* Wathakkir */,
 				9811A0141F6AB38F00D59CDA /* Products */,
-				4F0372026A41F79A5B27A7C3 /* Pods */,
 				34CFD017DEBCA8157A0A3F2B /* Frameworks */,
+				1546B948300CAD9BB64F1E68 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,10 +124,9 @@
 		98E967851FC030B800385E88 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				98442CC41FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift */,
-				98442CC51FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift */,
 				98251A931FC1B2A400F632EA /* ServerManager.swift */,
 				98251A951FC1B36900F632EA /* Post.swift */,
+				98442CC81FC60CA5001BFC20 /* RealmPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,12 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9811A0251F6AB38F00D59CDA /* Build configuration list for PBXNativeTarget "Wathakkir" */;
 			buildPhases = (
-				BB1B5C314AE63C70E137024B /* [CP] Check Pods Manifest.lock */,
+				A44E36D4582836C806E315DF /* [CP] Check Pods Manifest.lock */,
 				9811A00F1F6AB38F00D59CDA /* Sources */,
 				9811A0101F6AB38F00D59CDA /* Frameworks */,
 				9811A0111F6AB38F00D59CDA /* Resources */,
-				26C691067E8E0DAF025AECBF /* [CP] Embed Pods Frameworks */,
-				37904D3E07C8BE80E13C5175 /* [CP] Copy Pods Resources */,
+				65A15EFEC94DFB39DB4B3036 /* [CP] Embed Pods Frameworks */,
+				19E79EC50A26FD86D6D80A79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,7 +224,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26C691067E8E0DAF025AECBF /* [CP] Embed Pods Frameworks */ = {
+		19E79EC50A26FD86D6D80A79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A15EFEC94DFB39DB4B3036 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,22 +267,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		37904D3E07C8BE80E13C5175 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB1B5C314AE63C70E137024B /* [CP] Check Pods Manifest.lock */ = {
+		A44E36D4582836C806E315DF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98442CC71FC5C8D8001BFC20 /* PostCD+CoreDataProperties.swift in Sources */,
 				984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */,
 				9811A0191F6AB38F00D59CDA /* ViewController.swift in Sources */,
 				98D19CF41F7D43A200D31DB5 /* SWRevealViewController.m in Sources */,
@@ -306,7 +302,7 @@
 				98932D541F6FBB7B007F507F /* OLDSettingsViewController.swift in Sources */,
 				98251A941FC1B2A400F632EA /* ServerManager.swift in Sources */,
 				984127B91F8F913E00198B6C /* SettingsViewController.swift in Sources */,
-				98442CC61FC5C8D8001BFC20 /* PostCD+CoreDataClass.swift in Sources */,
+				98442CC91FC60CA5001BFC20 /* RealmPost.swift in Sources */,
 				98251A961FC1B36900F632EA /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +424,7 @@
 		};
 		9811A0261F6AB38F00D59CDA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B6B0B040205346C32BD5F27 /* Pods-Wathakkir.debug.xcconfig */;
+			baseConfigurationReference = 84EEAC9F3E61775140AE52D2 /* Pods-Wathakkir.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -445,7 +441,7 @@
 		};
 		9811A0271F6AB38F00D59CDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9B8AA1B02D9E6697CF8660D /* Pods-Wathakkir.release.xcconfig */;
+			baseConfigurationReference = D65676C3AE6B076673427FD8 /* Pods-Wathakkir.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

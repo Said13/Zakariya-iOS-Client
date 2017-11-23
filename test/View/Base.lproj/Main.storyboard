@@ -446,7 +446,7 @@
                                 <rect key="frame" x="162" y="18" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYi-Zd-sHM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYi-Zd-sHM">
                                 <rect key="frame" x="16" y="113" width="318" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
@@ -470,9 +470,9 @@
                         <color key="backgroundColor" red="0.2666666667" green="0.29411764709999999" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="bodyLabel" destination="r8Z-I3-VSy" id="V9q-zl-Cl6"/>
                         <outlet property="menuButton" destination="Muu-7g-3GR" id="cCa-XU-zf2"/>
-                        <outlet property="post_body" destination="r8Z-I3-VSy" id="CGb-rW-JK5"/>
-                        <outlet property="post_title" destination="uYi-Zd-sHM" id="uig-OR-5Nz"/>
+                        <outlet property="titleLabel" destination="uYi-Zd-sHM" id="PHs-l1-f0B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPs-eZ-Qeq" userLabel="First Responder" sceneMemberID="firstResponder"/>
