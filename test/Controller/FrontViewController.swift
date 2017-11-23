@@ -21,13 +21,7 @@ class FrontViewController: UIViewController {
     var post: Post?
     var posts = [RealmPost]()
     
-//    let realm = try! Realm(configuration: Realm.Configuration(inMemoryIdentifier: "TemporaryRealm"))
     let realm = try! Realm()
-
-//    var posts = [PostCD]()
-//    private var appDelegate = UIApplication.shared.delegate as! AppDelegate
-//    private var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,17 +34,15 @@ class FrontViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"
         let result = formatter.string(from: today)
-        print(result)
         return result
     }
     
     func getLastPost(){
         let posts = realm.objects(RealmPost.self)
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        //print(Realm.Configuration.defaultConfiguration.fileURL!)
         let sorted = posts.sorted(byKeyPath: "id")
         let last = sorted.last
         let post = last
-        print(post, " asd")
         let formatter = DateFormatter()
         let postData: String
         formatter.dateFormat = "dd.MM.yyyy"
@@ -68,23 +60,8 @@ class FrontViewController: UIViewController {
                 } else { return }
             }
         }
-        
-        
-        
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        do {
-//            posts = try context.fetch(PostCD.fetchRequest())
-//            let sort = NSSortDescriptor(keyPath: \PostCD.id, ascending: true)
-////            request.sort
-//        } catch let error as NSError {
-//            print("Could not fetch. \(error), \(error.userInfo) ")
-//        }
-//    }
-
-        
-        
+    
     func saveNewPost(id: Int){
         ServerManager.getPost(id: id) { (post, error) in
             if error != nil {
@@ -109,7 +86,6 @@ class FrontViewController: UIViewController {
             } else { return }
             
             rPost.date_added = Date()
-            print(rPost.description)
             
             try! self.realm.write {
                 self.realm.add(rPost)
@@ -124,7 +100,7 @@ class FrontViewController: UIViewController {
         let sorted = posts.sorted(byKeyPath: "id")
         let last = sorted.last
         let post = last
-        print("BOOM \(post?.description)")
+        
         if let myTitle = post?.title {
             titleLabel.text = myTitle
         } else { return }
