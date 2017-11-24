@@ -50,22 +50,27 @@ class FrontViewController: UIViewController {
         let sorted = posts.sorted(byKeyPath: "id")
         let last = sorted.last
         let post = last
-        print(post)
+        print(post, " asd")
         let formatter = DateFormatter()
         let postData: String
         formatter.dateFormat = "dd.MM.yyyy"
-        if let sData = post?.date_added {
-            postData = formatter.string(from: sData)
-        } else { return }
         if (post == nil) {
             saveNewPost(id: 1)
-        } else if (postData == getTodayData()) {
-            viewLastPost()
         } else {
-            if let sId = post?.id {
-                saveNewPost(id: (sId + 1))
+            if let sData = post?.date_added {
+                postData = formatter.string(from: sData)
             } else { return }
+            if (postData == getTodayData()) {
+                viewLastPost()
+            } else {
+                if let sId = post?.id {
+                    saveNewPost(id: (sId + 1))
+                } else { return }
+            }
         }
+        
+        
+        
     }
 //    override func viewWillAppear(_ animated: Bool) {
 //        super.viewWillAppear(animated)
@@ -104,6 +109,7 @@ class FrontViewController: UIViewController {
             } else { return }
             
             rPost.date_added = Date()
+            print(rPost.description)
             
             try! self.realm.write {
                 self.realm.add(rPost)
