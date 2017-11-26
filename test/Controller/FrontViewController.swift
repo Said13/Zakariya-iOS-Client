@@ -25,6 +25,8 @@ class FrontViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+
         sideMenus()
         getLastPost()
     }
@@ -73,18 +75,20 @@ class FrontViewController: UIViewController {
             self.post = myPost
             let rPost = RealmPost()
             
-            if let myId = self.post?.id {
+            if let myId = self.post?.id, let myTitle = self.post?.title, let myBody = self.post?.body {
                 rPost.id = myId
-            } else { return }
-            
-            if let myTitle = self.post?.title {
                 rPost.title = myTitle
-            } else { return }
-            
-            if let myBody = self.post?.body {
                 rPost.body = myBody
             } else { return }
             
+//            if let myTitle = self.post?.title {
+//                rPost.title = myTitle
+//            } else { return }
+//
+//            if let myBody = self.post?.body {
+//                rPost.body = myBody
+//            } else { return }
+//            
             rPost.date_added = Date()
             
             try! self.realm.write {

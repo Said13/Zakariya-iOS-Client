@@ -18,6 +18,7 @@
 		984127B91F8F913E00198B6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984127B81F8F913E00198B6C /* SettingsViewController.swift */; };
 		984202DC1F817101008A9211 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984202DB1F8169F7008A9211 /* Images.xcassets */; };
 		98442CC91FC60CA5001BFC20 /* RealmPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98442CC81FC60CA5001BFC20 /* RealmPost.swift */; };
+		984669931FCB0DB0009F3F00 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984669921FCB0DB0009F3F00 /* SecondViewController.swift */; };
 		984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D6E321F7EC3E200888958 /* FrontViewController.swift */; };
 		985868191F8BED3100A85C13 /* SettingsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */; };
 		9891BD6D1FC42BEF00383A68 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9891BD6C1FC42BEF00383A68 /* CoreData.framework */; };
@@ -40,6 +41,7 @@
 		984127B81F8F913E00198B6C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		984202DB1F8169F7008A9211 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = /Users/abdullahatkaev/SwiftProjects/test/test/Images.xcassets; sourceTree = "<absolute>"; };
 		98442CC81FC60CA5001BFC20 /* RealmPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPost.swift; sourceTree = "<group>"; };
+		984669921FCB0DB0009F3F00 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		984D6E321F7EC3E200888958 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 		985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPopUpViewController.swift; sourceTree = "<group>"; };
 		9891BD6C1FC42BEF00383A68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 				9800732E1F8E5B670018E6CF /* SideMenuViewController.swift */,
 				985868181F8BED3100A85C13 /* SettingsPopUpViewController.swift */,
 				984127B81F8F913E00198B6C /* SettingsViewController.swift */,
+				984669921FCB0DB0009F3F00 /* SecondViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				9811A0171F6AB38F00D59CDA /* AppDelegate.swift in Sources */,
 				9800732F1F8E5B670018E6CF /* SideMenuViewController.swift in Sources */,
 				9891BD911FC4305800383A68 /* Wathakkir.xcdatamodeld in Sources */,
+				984669931FCB0DB0009F3F00 /* SecondViewController.swift in Sources */,
 				985868191F8BED3100A85C13 /* SettingsPopUpViewController.swift in Sources */,
 				98932D541F6FBB7B007F507F /* OLDSettingsViewController.swift in Sources */,
 				98251A941FC1B2A400F632EA /* ServerManager.swift in Sources */,

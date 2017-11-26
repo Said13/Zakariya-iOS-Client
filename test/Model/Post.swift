@@ -14,15 +14,17 @@ class Post : Mappable{
     var id: Int?
     var title: String?
     var body: String?
+    var link: String?
 
     required init?(map: Map) {
         
     }
 
-    init(id: Int, title: String, body: String ) {
+    init(id: Int, title: String, body: String, link: String ) {
         self.id = id
         self.title = title
         self.body = body
+        self.link = link
     }
 
     // Mark : Mappable
@@ -30,6 +32,7 @@ class Post : Mappable{
         id <- map["id"]
         title <- map["title"]
         body <- map["body"]
+        link <- map["link"]
     }
 }
 
