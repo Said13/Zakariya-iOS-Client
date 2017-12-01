@@ -25,7 +25,7 @@ class FrontViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+//        print(Realm.Configuration.defaultConfiguration.fileURL!)
 
         sideMenus()
         getLastPost()

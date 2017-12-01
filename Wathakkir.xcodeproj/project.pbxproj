@@ -25,6 +25,7 @@
 		9891BD911FC4305800383A68 /* Wathakkir.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9891BD8F1FC4305800383A68 /* Wathakkir.xcdatamodeld */; };
 		98932D541F6FBB7B007F507F /* OLDSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98932D531F6FBB7B007F507F /* OLDSettingsViewController.swift */; };
 		98D19CF41F7D43A200D31DB5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */; };
+		98F6F9E81FCF58D2001D2CE8 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F6F9E71FCF58D2001D2CE8 /* HistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		98D19CF11F7D43A100D31DB5 /* Wathakkir-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wathakkir-Bridging-Header.h"; sourceTree = "<group>"; };
 		98D19CF21F7D43A200D31DB5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		98D19CF31F7D43A200D31DB5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		98F6F9E71FCF58D2001D2CE8 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		AA0140A1B374C731089FBEE5 /* Pods_Wathakkir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wathakkir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65676C3AE6B076673427FD8 /* Pods-Wathakkir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wathakkir.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wathakkir/Pods-Wathakkir.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 				98251A931FC1B2A400F632EA /* ServerManager.swift */,
 				98251A951FC1B36900F632EA /* Post.swift */,
 				98442CC81FC60CA5001BFC20 /* RealmPost.swift */,
+				98F6F9E71FCF58D2001D2CE8 /* HistoryTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			files = (
 				984D6E331F7EC3E200888958 /* FrontViewController.swift in Sources */,
 				9811A0191F6AB38F00D59CDA /* ViewController.swift in Sources */,
+				98F6F9E81FCF58D2001D2CE8 /* HistoryTableViewCell.swift in Sources */,
 				98D19CF41F7D43A200D31DB5 /* SWRevealViewController.m in Sources */,
 				9811A0171F6AB38F00D59CDA /* AppDelegate.swift in Sources */,
 				9800732F1F8E5B670018E6CF /* SideMenuViewController.swift in Sources */,

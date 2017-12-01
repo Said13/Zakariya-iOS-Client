@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
-class SecondViewController: UIViewController {
-
+class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var tableview: UITableView!
+    
+    let posts = try! Realm().objects(RealmPost.self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenus()
-        // Do any additional setup after loading the view.
+        self.tableview.dataSource = self
+        self.tableview.delegate = self
+        
+//        print(posts.count)
+//        print(posts)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,15 +39,35 @@ class SecondViewController: UIViewController {
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: HistoryTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HistoryTableViewCell
+        let post = posts[indexPath.row]
+        cell.textLabel?.text = post.title
+        cell.textLabel?.textColor = UIColor.white
+        return cell
+    }
+    
+   
 }
+
+
+//func setupNavigationBar() {
+//    let textAttributes = [NSForegroundColorAttributeName:UIColor.white]
+//    navigationController?.navigationBar.titleTextAttributes = textAttributes
+//    navigationItem.title = "История"
+//    //        UINavigationBar.appearance().barTintColor = UIColor.init(red: 45/255, green: 45/255, blue: 42/255, alpha: 1.0)
+//    navigationController?.navigationBar.barTintColor = UIColor.init(red: 45/255, green: 45/255, blue: 42/255, alpha: 1.0)
+//    navigationController?.navigationBar.tintColor = UIColor.white
+//    navigationController?.navigationBar.isTranslucent = false
+//    
+//}
+
